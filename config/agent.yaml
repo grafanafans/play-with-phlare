@@ -1,0 +1,10 @@
+target: agent
+
+scrape_configs:
+  - job_name: 'phlare'
+    static_configs:
+    - targets: ["phlare-1:4100", "phlare-2:4100", "phlare-3:4100"]
+
+client:
+  url: http://load-balancer:4100
+  tenant_id: demo
