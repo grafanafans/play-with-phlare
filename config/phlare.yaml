@@ -24,4 +24,3 @@ storage:
     secret_access_key: supersecret
     insecure: true
     bucket_name: phlare
-
